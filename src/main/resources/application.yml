@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/shopping_mall?characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      stat-view-servlet:
+        enabled: true
+        login-username: syt
+        login-password: 123456
+
+mybatis:
+  type-aliases-package: com.syt.shopp.pojo
+  mapper-locations: classpath:mapper/**/*.xml
+
